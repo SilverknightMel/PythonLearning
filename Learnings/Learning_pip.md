@@ -1,4 +1,5 @@
-"""use pip list to list installed module
+# use pip list to list installed module
+
     pip list --proxy=127.0.0.1:9000 --trusted-host=pypi.org --trusted-host=files.pythonhosted.org
     pip help list
     pip help
@@ -24,6 +25,28 @@
     go to root
     and create a new folder called virtualenvs
 
+You can test it by using
+virtualenv --version
+
+## Create a new virtual env
+
+virtualenv environment name (abc)
+or 
+vritual -p python3 django_linux_py3
+
+## using an environment
+
+. django_linux/bin/ctivate
+
+## check installed modules
+
+python -m pip list
+
+## deactivate
+
+deactivate
+
+
 Working inside a virtual environment
     Activating the environment
     Running python and pip
@@ -33,4 +56,3 @@ Working inside a virtual environment
 eg:
 run scripts\activate.bat
 
-"""
