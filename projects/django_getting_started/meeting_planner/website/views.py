@@ -1,0 +1,15 @@
+from django.shortcuts import render
+from datetime import datetime
+from django.http import HttpResponse
+
+# Create your views here.
+
+def welcome(request):
+    return render(request, "website/welcome.html",
+                    {"message": "This data was sent from the view to the template"})
+
+def date(request):
+    return HttpResponse("This page was served at " + str(datetime.now()))    
+
+def about(request):
+    return HttpResponse("This is about page, haha")
